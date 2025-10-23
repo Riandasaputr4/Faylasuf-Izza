@@ -1,0 +1,27 @@
+footer .container-fluid{
+    background-color:#277FC6;
+    height: 6.6rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    align-items: center;
+    padding-top: 1rem;
+}
+footer img{
+    height: 90px;
+    width: 109px;
+    margin-right: 1rem;
+}
+footer .copyright{
+    display: flex;
+    align-items: center;
+    color: black
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer .social-media{
+    justify-content: center;
+
+    gap: 1rem;
+}

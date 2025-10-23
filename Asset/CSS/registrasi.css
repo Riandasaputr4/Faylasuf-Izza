@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background: #FFFFFF;
+    background: linear-gradient(223deg, #1CADE4 -152.46%, #FFF 129.17%);
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.registrasi .card {
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 680px;
+    width: 483px;
+   
+}
+.registrasi .card .form-control {
+    border-radius: 30px;
+    height: 47px;
+}
+.registrasi .card .btn{
+    height: 61px;
+    width: 214px;
+    border-radius: 30px;
+    background: (90deg, #51AEFA 15.33%, #0468B8 96.3%);
+}

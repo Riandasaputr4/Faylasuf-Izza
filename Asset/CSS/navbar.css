@@ -1,0 +1,38 @@
+nav{
+    background:  linear-gradient(270deg, #2E9AE3 0.16%, #A1D0F0 20.84%, #FBFBFB 92.64%);
+    display: flex;
+    height: 3.4rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+nav .container-fluid{
+    gap: 2.5rem;
+}
+nav h6{
+    font-weight: 700;
+    font-family: "Cherry Bomb One", system-ui;
+}
+
+ .search-container {
+      position: relative;
+      width: 250px;
+    }
+
+    .search-input {
+      border-radius: 20px;
+      padding-right: 40px; /* ruang untuk ikon */
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #4a4a4a;
+      cursor: pointer;
+    }
+
+    .search-input:focus {
+      box-shadow: 0 0 5px #0d6efd;
+      border-color: #0d6efd;
+    }
