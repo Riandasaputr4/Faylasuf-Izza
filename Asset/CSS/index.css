@@ -142,9 +142,8 @@ header .container-fluid .kanan .kotak{
 
 .rambu .container{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap:2rem;
-  background-color: violet;
 }
 .rambu .card{
   display: flex;

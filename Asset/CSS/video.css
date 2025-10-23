@@ -1,0 +1,57 @@
+
+body{
+      font-family: "Arimo",sans-serif;
+    }
+body a{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+body a:hover,
+     a.active{
+      color:rgba(18, 112, 243, 0.51) ;
+}
+.blue-frame {
+      background-color: #1E73BE; /* Warna biru */
+      border-radius: 20px;
+      padding: 15px;
+      width: 250px;
+      margin: 50px auto;
+    }
+
+    .card-custom {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .card-header {
+      font-weight: bold;
+      text-align: center;
+      background-color: white;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .card-body {
+      padding: 15px 20px;
+    }
+
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+
+.container-fluid .row .kanan {
+    padding: 20px;
+    margin-left: 2.5rem;
+}
+
+.container-fluid .row .kanan .card {
+    border-radius: 36px;
+    width: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-fluid .row .kanan .card .card-body .btn {
+    border-radius: 20px;
+    width: fit-content;
+    margin: auto;
+}

@@ -6,7 +6,11 @@ footer .container-fluid{
     align-items: center;
     padding-top: 1rem;
 }
-footer img{
+footer .decoration img{
+   opacity: 30%;
+
+}
+footer .copyright img{
     height: 90px;
     width: 109px;
     margin-right: 1rem;
