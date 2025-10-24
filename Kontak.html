@@ -24,7 +24,7 @@
 <body>
 
     <!-- This is navbar -->
-     <nav class="navbar navbar-expand-lg  p-3 fixed-top">
+      <nav class="navbar navbar-expand-lg  p-3 fixed-top">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="index.html"><i class="bi bi-house-fill"></i>Beranda</a>
+          <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i>Beranda</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Tentangkami.html"><i class="bi bi-person-vcard"></i>Tentang Kami</a>
@@ -47,9 +47,11 @@
           <a class="nav-link" href="ForumDiskusi.html"><i class="bi bi-wechat"></i>Forum Diskusi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Kontak.html"><i class="bi bi-exclamation-circle"></i>Kontak</a>
+          <a class="nav-link" href="Kontak.html"><i class="bi bi-exclamation-circle"></i>Kontak</a>
         </li>
       </ul>
+      <button class="btn btn-primary mx-3" id="loginBtn" onclick="window.location.href='login.html'" style="border-radius: 2rem;">Masuk</button>
+      <button class="btn btn-primary mx-3" id="logoutBtn" onclick="logout()" style="border-radius: 2rem;">Keluar</button>
     </div>
   </div>
 </nav>
@@ -116,5 +118,8 @@ background-clip: text;">INFORMASI KONTAK</h1>
     <div class="" style=" width: auto; background: #0000;"></div>
     </Footer>
     
+    <!-- This is my JS -->
+    <script src="Asset/JS/LoginRegister.js"></script>
+    <!-- This is Boostrap JS -->
 </body>
 </html>

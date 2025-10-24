@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>E-Book Section</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  .filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .filter-container button {
+    background-color: #eee;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  .filter-container button.active {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .ebook-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .ebook-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+  }
+
+  .ebook-item h4 {
+    margin: 5px 0;
+  }
+</style>
+</head>
+<body>
+
+<h2>Kategori E-Book</h2>
+
+<!-- Filter kategori -->
+<div class="filter-container" id="mainCategory">
+  <button class="active" data-category="semua">Semua</button>
+  <button data-category="berkendara">Berkendara</button>
+  <button data-category="selamat">Selamat</button>
+  <button data-category="sehat">Sehat</button>
+</div>
+
+<!-- Filter sub kategori -->
+<div class="filter-container" id="subCategory">
+  <button class="active" data-sub="semua">Semua</button>
+  <button data-sub="sd">SD</button>
+  <button data-sub="smp">SMP</button>
+  <button data-sub="sma">SMA</button>
+</div>
+
+<!-- Daftar e-book -->
+<div class="ebook-list" id="ebookList">
+  <div class="ebook-item" data-category="berkendara" data-sub="sd">
+    <h4>Berkendara Aman untuk Anak SD</h4>
+    <p>Kategori: Berkendara | SD</p>
+  </div>
+
+  <div class="ebook-item" data-category="berkendara" data-sub="sma">
+    <h4>Tata Cara Berkendara Aman untuk Remaja SMA</h4>
+    <p>Kategori: Berkendara | SMA</p>
+  </div>
+
+  <div class="ebook-item" data-category="sehat" data-sub="smp">
+    <h4>Gaya Hidup Sehat untuk Siswa SMP</h4>
+    <p>Kategori: Sehat | SMP</p>
+  </div>
+
+  <div class="ebook-item" data-category="selamat" data-sub="sd">
+    <h4>Tips Selamat di Jalan untuk Anak SD</h4>
+    <p>Kategori: Selamat | SD</p>
+  </div>
+
+  <div class="ebook-item" data-category="sehat" data-sub="sma">
+    <h4>Pola Makan Sehat untuk SMA</h4>
+    <p>Kategori: Sehat | SMA</p>
+  </div>
+</div>
+
+<script>
+  const mainButtons = document.querySelectorAll('#mainCategory button');
+  const subButtons = document.querySelectorAll('#subCategory button');
+  const ebooks = document.querySelectorAll('.ebook-item');
+
+  let selectedCategory = 'semua';
+  let selectedSub = 'semua';
+
+  mainButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      mainButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedCategory = btn.dataset.category;
+      filterEbooks();
+    });
+  });
+
+  subButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      subButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedSub = btn.dataset.sub;
+      filterEbooks();
+    });
+  });
+
+  function filterEbooks() {
+    ebooks.forEach(ebook => {
+      const ebookCategory = ebook.dataset.category;
+      const ebookSub = ebook.dataset.sub;
+
+      const matchCategory = (selectedCategory === 'semua' || ebookCategory === selectedCategory);
+      const matchSub = (selectedSub === 'semua' || ebookSub === selectedSub);
+
+      if (matchCategory && matchSub) {
+        ebook.style.display = 'block';
+      } else {
+        ebook.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

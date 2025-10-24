@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
 nav{
     background:  linear-gradient(270deg, #2E9AE3 0.16%, #A1D0F0 20.84%, #FBFBFB 92.64%);
     display: flex;

@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
 h1{
 background: linear-gradient(90deg, #A4CCF4 -18.2%, #C19B9B 127.48%);
 background-clip: text;

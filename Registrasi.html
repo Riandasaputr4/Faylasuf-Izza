@@ -29,7 +29,7 @@
         <img src="Asset/Foto/logo jasa raharja2.png" class="position-absolute end-0" alt="" style="height: 5rem; margin-right: 2rem; margin-top:8rem ;" >
 
     </div>
-    
+
         <section class="registrasi d-flex justify-content-center align-items-center vh-100" style="margin-bottom: 10rem; margin-top: 10rem;">
             <div class="card p-5">
                 <div class="card-body">
@@ -37,22 +37,22 @@
                     <form>
                         <div class="mb-3">
                             <label for="nama" class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="nama" >
+                            <input type="text" id="registerName" class="form-control" id="nama" >
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" >
+                            <input type="email" id="registerEmail" class="form-control" id="email" >
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password">
+                            <input type="password" id="registerPassword" class="form-control" id="password">
                         </div>
                         <div class="mb-3">
                             <label for="confirm-password" class="form-label">Konfirmasi Password</label>
-                            <input type="password" class="form-control" id="confirm-password">
+                            <input type="password" id="registerConfirm" class="form-control" id="confirm-password">
                         </div>
                         <div class="d-grid gap-2 justify-content-center">
-                            <button type="submit" class="btn btn-primary mb-3">Sign Up</button>
+                            <button type="submit" onclick="register()" class="btn btn-primary mb-3">Sign Up</button>
                         </div>
                     </form>
                     <p class="text-center">Sudah punya akun ? <a href="Login.html">Masuk disini </a></p>
@@ -88,6 +88,11 @@
         </div>
     </div>
     <div class="" style=" width: auto; background: #0000;"></div>
+
+    <!-- This is my JS -->
+    <script src="Asset/JS/LoginRegister.js"></script>
+
+    <!-- This is Boostrap JS -->
     </Footer>
 
     <!-- This is Ioicons -->

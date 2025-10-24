@@ -63,108 +63,166 @@
         </div>
     </header>
     <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-3 kiri">
-                     <div class="blue-frame">
-    <div class="card card-custom">
-      <div class="card-header">
-        Kategori
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar kiri -->
+      <div class="col-3 kiri">
+        <div class="blue-frame">
+          <div class="card card-custom">
+            <div class="card-header">Kategori</div>
+            <div class="card-body">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="kategori" id="semua" value="semua" checked>
+                <label class="form-check-label" for="semua">Semua</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="kategori" id="berkendara" value="berkendara">
+                <label class="form-check-label" for="berkendara">Berkendara</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="kategori" id="selamat" value="selamat">
+                <label class="form-check-label" for="selamat">Selamat</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="kategori" id="sehat" value="sehat">
+                <label class="form-check-label" for="sehat">Sehat</label>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card-body">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="kategori" id="tahun2021" value="2021">
-          <label class="form-check-label" for="tahun2021">2021</label>
+
+      <!-- Bagian kanan -->
+      <div class="col-8 kanan">
+        <div class="ebook d-flex flex-column align-items-center mt-4 mb-5">
+<section class="container my-5">
+  <h2 class="text-center mb-4">E-Book Pendidikan Lalu Lintas</h2>
+
+  <!-- 🔹 Tombol Filter -->
+  <div class="d-flex justify-content-center mb-4 gap-2">
+    <button class="btn btn-success btn-sm filter-btn active" data-filter="all">Semua</button>
+    <button class="btn btn-outline-success btn-sm filter-btn" data-filter="sd">SD</button>
+    <button class="btn btn-outline-success btn-sm filter-btn" data-filter="smp">SMP</button>
+    <button class="btn btn-outline-success btn-sm filter-btn" data-filter="sma">SMA</button>
+  </div>
+
+  <!-- 🔹 Daftar E-Book -->
+  <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center" id="ebookList">
+
+    <!-- ================== SD ================== -->
+    <div class="col ebook-item" data-category="berkendara" data-sub="sd">
+      <div class="card h-100">
+        <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-title">Berkendara Aman untuk Anak SD</p>
+          <a href="#" class="btn btn-primary w-100">Baca Selengkapnya</a>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="kategori" id="tahun2022" value="2022" checked>
-          <label class="form-check-label" for="tahun2022">2022</label>
+      </div>
+    </div>
+
+    <div class="col ebook-item" data-category="selamat" data-sub="sd">
+      <div class="card h-100">
+        <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-title">Tips Selamat di Jalan untuk Anak SD</p>
+          <a href="#" class="btn btn-primary w-100">Baca Selengkapnya</a>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="kategori" id="tahun2023" value="2023">
-          <label class="form-check-label" for="tahun2023">2023</label>
+      </div>
+    </div>
+
+    <div class="col ebook-item" data-category="sehat" data-sub="sd">
+      <div class="card h-100">
+        <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-title">Hidup Sehat Sejak Dini untuk Anak SD</p>
+          <a href="#" class="btn btn-primary w-100">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tambahan SD biar banyak -->
+    <div class="col ebook-item" data-category="disiplin" data-sub="sd">
+      <div class="card h-100">
+        <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-title">Belajar Disiplin di Jalan Raya (SD)</p>
+          <a href="#" class="btn btn-primary w-100">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col ebook-item" data-category="berkendara" data-sub="sd">
+      <div class="card h-100">
+        <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-title">Mengenal Rambu Lalu Lintas (SD)</p>
+          <a href="#" class="btn btn-primary w-100">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================== SMP ================== -->
+    <div class="col ebook-item" data-category="sehat" data-sub="smp">
+      <div class="card h-100">
+        <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-title">Gaya Hidup Sehat untuk Siswa SMP</p>
+          <a href="#" class="btn btn-primary w-100">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col ebook-item" data-category="berkendara" data-sub="smp">
+      <div class="card h-100">
+        <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-title">Etika Berkendara Aman untuk SMP</p>
+          <a href="#" class="btn btn-primary w-100">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col ebook-item" data-category="selamat" data-sub="smp">
+      <div class="card h-100">
+        <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-title">Keselamatan di Sekitar Sekolah</p>
+          <a href="#" class="btn btn-primary w-100">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================== SMA ================== -->
+    <div class="col ebook-item" data-category="berkendara" data-sub="sma">
+      <div class="card h-100">
+        <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-title">Etika Berkendara untuk Siswa SMA</p>
+          <a href="#" class="btn btn-primary w-100">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col ebook-item" data-category="sehat" data-sub="sma">
+      <div class="card h-100">
+        <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-title">Pola Makan Sehat untuk Remaja SMA</p>
+          <a href="#" class="btn btn-primary w-100">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col ebook-item" data-category="disiplin" data-sub="sma">
+      <div class="card h-100">
+        <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="">
+
         </div>
       </div>
     </div>
   </div>
-                </div>
-                <div class="col-8 kanan">
-                    <div class="ebook d-flex flex-column align-items-center mt-4 mb-5">
-                        <div class="search-container mb-4" style="margin-left: 30rem;">
-                         <input type="text" class="form-control search-input" style="border-radius: 20px; background-color: transparent; border: 1px solid black;" placeholder="Search...">
-                            <i class="bi bi-search search-icon"></i>
-                                </div>
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div class="col">
-                              <div class="card h-100">
-                                <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="Ebook 1">
-                                <div class="card-body">
-                                  <p class="card-title text-start">Diseminasi Kurikulum Pendidikan Lalu Lintas SMA Kelas XII</p>
-                                    <div class="d-grid gap-2">
-                                        <a href="#" class="btn btn-primary">baca Selengkapnya</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="col">
-                              <div class="card h-100">
-                                <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="Ebook 2">
-                                <div class="card-body">
-                                  <p class="card-title text-start">Diseminasi Kurikulum Pendidikan Lalu Lintas SMA Kelas XI</p>
-                                    <div class="d-grid gap-2">
-                                        <a href="#" class="btn btn-primary">baca Selengkapnya</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="col">
-                              <div class="card h-100">
-                                <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="Ebook 2">
-                                <div class="card-body">
-                                  <p class="card-title text-start">Diseminasi Kurikulum Pendidikan Lalu Lintas SMA Kelas XI</p>
-                                    <div class="d-grid gap-2">
-                                        <a href="#" class="btn btn-primary">baca Selengkapnya</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="col">
-                              <div class="card h-100">
-                                <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="Ebook 2">
-                                <div class="card-body">
-                                  <p class="card-title text-start">Diseminasi Kurikulum Pendidikan Lalu Lintas SMA Kelas XI</p>
-                                    <div class="d-grid gap-2">
-                                        <a href="#" class="btn btn-primary">baca Selengkapnya</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="col">
-                              <div class="card h-100">
-                                <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="Ebook 2">
-                                <div class="card-body">
-                                  <p class="card-title text-start">Diseminasi Kurikulum Pendidikan Lalu Lintas SMA Kelas XI</p>
-                                    <div class="d-grid gap-2">
-                                        <a href="#" class="btn btn-primary">baca Selengkapnya</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="col">
-                              <div class="card h-100">
-                                <img src="Asset/Foto/ebook xample.png" class="card-img-top" alt="Ebook 2">
-                                <div class="card-body">
-                                  <p class="card-title text-start">Diseminasi Kurikulum Pendidikan Lalu Lintas SMA Kelas XI</p>
-                                    <div class="d-grid gap-2">
-                                        <a href="#" class="btn btn-primary">baca Selengkapnya</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-        </div>
+</main>
 
-    </main>
    <Footer class="fixed-bottom position-relative overflow-hidden">
         <div class="container-fluid px-2 d-flex align-content-center">
           <div class="decoration d-flex position-absolute end-0">
@@ -195,5 +253,10 @@
     <div class="" style=" width: auto; background: #0000;"></div>
     </Footer>
 
+    <!-- This is my JS -->
+    <script src="Asset/JS/Ebook.js"></script>
+
+
+    <!-- This is Boostrap JS -->
 </body>
 </html>
